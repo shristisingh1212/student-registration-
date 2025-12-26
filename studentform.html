@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Details</title>
+    <link rel="stylesheet" href="studentform.css">
+</head>
+<body>
+    <header>
+        Student Details Form
+    </header>
+
+    <main>
+        <section class="form-section">
+            <form id="studentForm">
+                <input type="text" id="studentName" placeholder="Student Name" required />
+                <input type="text" id="studentID" placeholder="Student ID" required />
+                <input type="text" id="class" placeholder="Class" required />
+                <input type="text" id="rollNumber" placeholder="Roll Number" required />
+                <input type="email" id="email" placeholder="Email" required />
+                <input type="text" id="contact" placeholder="Contact No" required />
+                <button type="submit">Add Student</button>
+            </form>
+        </section>
+
+        <section class="display-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>ID</th>
+                        <th>Class</th>
+                        <th>Roll Number</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="studentData"></tbody>
+            </table>
+        </section>
+    </main>
+    <script src="studentform.js"></script>
+</body>
+</html>
